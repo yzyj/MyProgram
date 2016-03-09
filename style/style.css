@@ -1,0 +1,224 @@
+/*  @author dpd
+    @date 2016/3/8    
+*/
+
+ .main {
+    position: absolute;
+    width: 100%;
+ 	/*	width: 80%;
+    left: 10%;*/
+ }
+ .main-container {
+ 		position: relative;
+ 		width: 80%;
+ 		left:10%;
+ 		top: 60px;
+ }
+ .header {
+ 	width: 100%;
+ 	height: 60px;
+ 	background-color: #00062B;
+ 	position: fixed;
+ 	top: 0px;
+ 	z-index: 1000;
+ }
+ .athead {
+ 		opacity: 0.8;
+ }
+  .header-img {
+  	margin-left: 80px;
+  }
+
+  .header-order {
+  	float: right;
+  	position: relative;
+    margin-right: 90px;
+  }
+  .header-order li {
+  	list-style:none;
+  	float: right;
+  	margin-left: 35px; 
+  	line-height: 60px;
+    overflow: hidden;
+    color: #BFB9B9;
+    font-weight: bold;
+    cursor: pointer;
+  }
+  .header-order .selected , .header-order li:hover {
+  	color: #7B7126;
+  }
+  .describe {
+  	height: 200px;
+  	margin-top: 25px;
+  	padding: 60px;
+  }
+  .describe-close {
+  	float: right;
+    position: relative;
+    margin-top: -60px;
+    cursor: pointer;
+  }
+  .describe-close i {
+  	color: #BCBCBC;
+  }
+  .describe-detail {
+  	width: 95%;
+    -moz-column-count: 2;
+    -webkit-column-count: 2;
+    column-count: 2;
+  }
+  .describe-detail p {  	
+    font-family: Helvetica;
+    font-size: 13px;
+  }
+  .describe-detail img {
+  	display: block;
+    margin: 0 auto;
+  }
+  p {
+  	margin: 0;
+    font-family: Helvetica;
+    font-weight: 600;
+  }
+  .product-tb, .funding-tb {
+  	width: 100%;
+  }
+  .list-tb {
+  	width: 86%;
+    margin-left: 7%;
+  }
+  .product-tb th,  .list-tb th, .funding-tb th {
+    background-color: #BCBCBC;
+    color: #fff;
+    font-weight: 600;
+  }
+  .product-tb th, .product-tb td , .list-tb th, .list-tb td, .funding-tb th, .funding-tb td {
+  	padding: 7px;
+  	text-align: center;
+    vertical-align: middle;
+  }
+  .animate {
+    font-size: 20px;
+    font-family: 宋体;
+    font-weight: 600;
+  }
+  .product-btn, .recent-press-btn {
+  	width: 100%;
+  	text-align:center;
+  	padding: 50px;
+  }
+  .product-btn button, .recent-press-btn button {
+  	width: 230px;
+    height: 60px;
+    border-radius: 3px;
+    margin: 10px;
+    font-size: 15px;
+    letter-spacing: 1.1px;
+  }
+  hr {
+  	color: #B8B8B8;
+  	display: block;
+    border-style: groove;
+    border-width: 1px;
+  }
+  .about h2, .list h2, .funding-history h2, .recent-press h2 {
+  	font-size: 27px;
+    color: #BEBEBE;
+    margin-left: 10px;
+  }
+  .about p {
+  	width: 42%;
+    float: left;
+    top: 10px;
+    position: relative;
+    margin-right: 40px;
+  }
+  .about-tb {
+  	width: 50%;
+  }
+  .about-tb th {
+    font-weight: 600;
+  }
+  .about-tb th, .about-tb td {
+  	padding: 7px;
+  	text-align: left;
+    vertical-align: middle;
+  }
+  .selector-container {
+  	margin-left: 48%;
+    display: inline-block;
+  }
+  .selector {
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF;
+    border: 3px #BCBCBC solid;
+    -webkit-border-radius: 100px;
+    float: left;
+    margin: 17px 5px;
+  }
+  .selector-container .selected, .selector:hover {
+  	background-color: #33B7B1;
+  }
+  .funding-tb .odd {
+  	background-color: #F2F2F6;
+  }
+  .underline {
+  	text-decoration: underline;
+  	cursor: pointer;
+  }
+  .recent-tbcontent {
+    font-size: 13px;
+    font-weight: 500;
+    font-family: Helvetica;
+  }
+  .recent-tbhead {
+    width: 30%;
+    font-family: Helvetica;
+    font-weight: 600;    
+  }
+  .recent-tbdate {
+    font-family: '微软雅黑';
+    font-size: 23px;
+  }
+  .recent-tbitem {
+		font-size: 18px;
+    font-family: '宋体';
+  }
+  .footer {
+  	background-color: #00062B;
+    margin-top: 100px;
+    text-align: center;  
+    padding: 20px 0 80px 0;   	
+  }
+  .footer-img {
+  	display: block;
+    margin: 0 auto;
+  }
+  .rights {
+    width: 80%;
+    margin: 30px 10% 0 10%;
+    text-align: left;
+  }
+  .goto-head {
+    position: fixed;
+    top: 80%;
+    right: 10px;
+    background-color: #eee;
+    width: 30px;
+    height: 30px;
+    text-align: center;
+    cursor: pointer;
+  }
+/*=============最小支持 800*600===========*/
+@media (min-width: 800px) and (max-width: 1024px) {
+	.header-order li {
+    margin-left: 10px;
+  }
+  .describe-detail {
+    width: 98%;
+	}
+	p {
+		font-family:Helvetica;
+	}
+}
